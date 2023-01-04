@@ -1,0 +1,7 @@
+.show{
+    display:none;
+}
+#register{
+    cursor: pointer;
+    text-decoration: dashed;
+}

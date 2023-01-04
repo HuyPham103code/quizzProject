@@ -1,0 +1,148 @@
+
+.container{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* title */
+.header{
+    background-color: black;
+    border-bottom: 5px red solid;
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px silver;
+    font-size: 25px;
+    display: flex;
+}
+.title{
+    text-align: center;
+    flex:10;
+    padding:10px;
+    margin:15px;
+}
+
+/* set imformation of user */
+.user{
+    margin-left: 3px;
+    flex:1;
+    text-align: center;
+    text-shadow:  0 0;
+}
+#currentUser{
+    position: relative;
+    text-align: center;
+    width:50%;
+    /* border: 1px solid blue; */
+    margin-left: 30%;
+    margin-top:10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.icon--user{
+    padding:9px;
+    border: 1px solid white;
+    border-radius: 45%;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
+
+.user--listbtn{
+    position: absolute;
+    width: 140px;
+    text-align: left;
+    list-style: none;
+    top:50px;
+    right:50px;
+    padding:0px;
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+}
+.user--listbtn > li{
+    text-align: center;
+    margin:0%;
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+.user--listbtn > li:hover{
+    background-color: silver;
+}
+/* display todo */
+.content{
+    min-height: 500px;
+    padding:20px;
+    display: flex;
+    background-color: rgb(0,0,0,0.7);
+    color: white;
+    border-bottom: 5px red solid;
+}
+.content > table,tr{
+    border: 1px solid silver;
+}
+.content > table{
+    padding:10px;
+}
+.todo{
+    margin: 50px auto;
+    width:900px;
+    height:fit-content;
+    font-size: 20px;
+}
+/* .todo--row{
+    width:100%;
+} */
+.todo-id, .todo--english, .todo--mean, .todo--complete{
+    padding:5px 10px;
+    margin: 0 20px;
+    width: 100px;
+}
+.todo--id{
+    width:50px;
+    margin-right: 30px;
+}
+.todo--english{
+    margin-left: 5px;
+    width: 300px;
+}
+.todo--mean{
+    width: 500px;
+}
+/* todo function */
+.todo--func{
+    list-style: none;
+    display: flex;
+}
+.todo--func > li{
+    margin-left: 15px;
+}
+.fix--icon , .del--icon{
+    font-size: 20xp;
+    cursor: pointer;
+}
+/* footer */
+.footer{
+    display: flex;
+    background-color: black;
+    color:blue;
+    font-size: 20px;
+    height:50px;
+}
+.footer--content{
+    margin:auto;
+}
+
+/* show */
+.show{
+    display: none;
+}
+
+
+
+
+

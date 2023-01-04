@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzlet</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/layout--create--update.css">
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+   <div class="container">
+        <div id="header" class="header">
+        <h2 class="title">QUIZ PROJECT</h2>
+            <div class="user">
+                <div id="currentUser"><i class="fa-solid fa-user icon--user"></i></div>
+                <div class="user--btn show">
+                    <ul class="user--listbtn">
+                        <li id="logout1">LogIn<li>
+                        <li id="logout2">LogOut</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content">
+            <table class="todo">
+                <thead class="todo--row">
+                    <td class="todo--id">ID</td>
+                    <td class="todo--english">English</td>
+                    <td class="todo--mean">Vocal</td>
+                    <td class="todo--complete">
+                        <ul class="todo--func">
+                            <li class="todo--func--value">Choose</li>
+                                <li class="todo--func--fix">
+                            </li>
+                                <li class="todo--func--del">
+                            </li>
+                            </li>
+                                <button class="create" id="create">Create</button>
+                            </li>
+                        </ul>
+                    </td>
+                </thead>
+                <tbody id="root"></tbody>
+            </table>
+
+
+            <!-- input create -->
+            <div class="input show" id="showlayout">
+                <div class="layout">
+                    <div class="input--content">
+                        <label for="input--english">Enter english: </label>
+                        <input type="text" id="input--english"><br>
+                        <label for="input--mean">Enter mean: </label>
+                        <input type="text" id="input--mean"><br>
+                        <label for="input--choose">Choose: </label>
+                        <input type="checkbox" name="done" id="input--choose" checked>
+                        <button class="input--add" id="input--add">Add</button>
+                    </div>
+                </div>
+            </div>
+            <!-- input update -->
+            <!-- <div class="update--container show" id="showUpdate">
+                <div class="layout2">
+                    <div class="input--content2">
+                        <label for="input--name2">Enter name: </label>
+                        <input type="text" id="input--name2"><br>
+                        <label for="input--done2">Done: </label>
+                        <input type="checkbox" name="done" id="input--done2" checked>
+                        <button class="input--update" id="btn--update">Update</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div id="footer" class="footer">
+            <div class="footer--content">Copy Right 2023</div>
+        </div>
+   </div>
+   <script src="./js/main.js" type="module"></script>
+</body>
+</html>
